@@ -19,29 +19,41 @@ public class E2ETest extends BaseTest {
         return JsonUtils.getJsonData();
     }
 
-    @Test(dataProvider="loginData",
-          retryAnalyzer = utils.RetryAnalyzer.class)
-    public void completeOrderTest(String username,
-                                  String password){
+@Test(dataProvider="loginData",
+      retryAnalyzer = utils.RetryAnalyzer.class)
+public void completeOrderTest(String username,
+                              String password){
 
-        logger.info("Starting Test for user: " + username);
+    logger.info("Starting Test for user: " + username);
 
-        LoginPage login = new LoginPage(driver);
+    LoginPage login = new LoginPage(driver);
 
-        ConfirmationPage confirmation =
-                login.enterUsername(username)
-                        .enterPassword(password)
-                        .clickLogin()
-                        .addProductToCart()
-                        .goToCart()
-                        .clickCheckout()
-                        .enterDetails()
-                        .finishOrder();
+    // Perform login
+    var loginResult = login.enterUsername(username)
+                            .enterPassword(password)
+                            .clickLogin();
 
-        Assert.assertEquals(
-                confirmation.getConfirmationMessage(),
-                "Thank you for your order!");
-
-        logger.info("Test Passed Successfully");
+    // Handle locked user case
+    if(username.equalsIgnoreCase("locked_out_user")){
+        logger.info("Validating locked user error message");
+        Assert.assertTrue(login.isErrorVisible(),
+                "Error message not displayed for locked user");
+        return;
     }
+
+    // Continue normal flow for valid user
+    ConfirmationPage confirmation =
+            loginResult.addProductToCart()
+                       .goToCart()
+                       .clickCheckout()
+                       .enterDetails()
+                       .finishOrder();
+
+    Assert.assertEquals(
+            confirmation.getConfirmationMessage(),
+            "Thank you for your order!");
+
+    logger.info("Test Passed Successfully");
 }
+}
+
