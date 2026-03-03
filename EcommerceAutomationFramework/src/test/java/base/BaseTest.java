@@ -3,6 +3,7 @@ package base;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import org.apache.logging.log4j.*;
+import org.testng.annotations.Optional;
 
 @Listeners(utils.TestListener.class)
 public class BaseTest {
@@ -13,7 +14,7 @@ public class BaseTest {
 
  @Parameters("browser")
  @BeforeMethod
- public void setup(String browser) {
+ public void setup(@Optional("chrome")String browser) {
 
      logger.info("Launching browser: " + browser);
      DriverFactory.initDriver(browser);
@@ -25,4 +26,5 @@ public class BaseTest {
      logger.info("Closing browser");
      DriverFactory.quitDriver();
  }
+
 }
