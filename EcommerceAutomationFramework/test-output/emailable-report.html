@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">E2E Suite</th></tr>
+<tr><td><a href="#t0">Chrome Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num attn">2</td><td class="num">85,250</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">E2E Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.E2ETest</td><td><a href="#m0">completeOrderTest</a></td><td rowspan="2">1772543945439</td><td rowspan="2">10761</td></tr><tr class="failedeven"><td><a href="#m1">completeOrderTest</a></td></tr><tr><th colspan="4">Chrome Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="4">tests.E2ETest</td><td><a href="#m2">completeOrderTest</a></td><td rowspan="4">1772543920651</td><td rowspan="4">10933</td></tr><tr class="retriedeven"><td><a href="#m3">completeOrderTest</a></td></tr><tr class="retriedeven"><td><a href="#m4">completeOrderTest</a></td></tr><tr class="retriedeven"><td><a href="#m5">completeOrderTest</a></td></tr></tbody>
+</table>
+<h2>Chrome Test</h2><h3 id="m0">tests.E2ETest#completeOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>locked_out_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[contains(text(),&apos;Add to cart&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ProductPage.addProductToCart(ProductPage.java:26)
+	at tests.E2ETest.completeOrderTest(E2ETest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Add to cart&apos;)]&quot;}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3a028decfd1647f6fcb0067a7a4089, findElement {using=xpath, value=//button[contains(text(),&apos;Add to cart&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59869}, goog:processID: 12440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59869/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd3a028decfd1647f6fcb0067a7a4089
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.E2ETest#completeOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: finish&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.CheckoutPage.finishOrder(CheckoutPage.java:52)
+	at tests.E2ETest.completeOrderTest(E2ETest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#finish&quot;}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8344f6956e948433c60ed164d58d57a8, findElement {using=id, value=finish}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51384}, goog:processID: 22344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51384/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8344f6956e948433c60ed164d58d57a8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.E2ETest#completeOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>locked_out_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[contains(text(),&apos;Add to cart&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ProductPage.addProductToCart(ProductPage.java:26)
+	at tests.E2ETest.completeOrderTest(E2ETest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Add to cart&apos;)]&quot;}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76b7bff976131730e58bce88ab552387, findElement {using=xpath, value=//button[contains(text(),&apos;Add to cart&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56232}, goog:processID: 14888, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56232/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76b7bff976131730e58bce88ab552387
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.E2ETest#completeOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>locked_out_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[contains(text(),&apos;Add to cart&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ProductPage.addProductToCart(ProductPage.java:26)
+	at tests.E2ETest.completeOrderTest(E2ETest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Add to cart&apos;)]&quot;}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4119fef4018f7ee9d732f1d5971f66a, findElement {using=xpath, value=//button[contains(text(),&apos;Add to cart&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64906}, goog:processID: 7436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64906/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4119fef4018f7ee9d732f1d5971f66a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.E2ETest#completeOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: finish&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.CheckoutPage.finishOrder(CheckoutPage.java:52)
+	at tests.E2ETest.completeOrderTest(E2ETest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#finish&quot;}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fec5a932cdaefb9fdf063f0ea51ea263, findElement {using=id, value=finish}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56858}, goog:processID: 768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56858/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fec5a932cdaefb9fdf063f0ea51ea263
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.E2ETest#completeOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: first-name&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.CheckoutPage.enterDetails(CheckoutPage.java:36)
+	at tests.E2ETest.completeOrderTest(E2ETest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5b9a0c6e5334658072b138e6a8cf378, findElement {using=id, value=first-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61106}, goog:processID: 6280, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61106/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5b9a0c6e5334658072b138e6a8cf378
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

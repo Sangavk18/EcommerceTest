@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="4" ignored="0" total="6" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-03T18:47:51 IST" name="E2E Suite" finished-at="2026-03-03T18:49:16 IST" duration-ms="85250">
+    <groups>
+    </groups>
+    <test started-at="2026-03-03T18:47:51 IST" name="Chrome Test" finished-at="2026-03-03T18:49:16 IST" duration-ms="85250">
+      <class name="tests.E2ETest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:47:51 IST" name="setup" finished-at="2026-03-03T18:47:55 IST" duration-ms="3724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="completeOrderTest(java.lang.String,java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:47:55 IST" name="completeOrderTest" data-provider="loginData" finished-at="2026-03-03T18:48:09 IST" duration-ms="14321" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: finish' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: finish' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.CheckoutPage.finishOrder(CheckoutPage.java:52)
+at tests.E2ETest.completeOrderTest(E2ETest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fec5a932cdaefb9fdf063f0ea51ea263, findElement {using=id, value=finish}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56858}, goog:processID: 768, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56858/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fec5a932cdaefb9fdf063f0ea51ea263
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:09 IST" name="tearDown" finished-at="2026-03-03T18:48:09 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:09 IST" name="setup" finished-at="2026-03-03T18:48:11 IST" duration-ms="1694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="completeOrderTest(java.lang.String,java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:11 IST" name="completeOrderTest" data-provider="loginData" finished-at="2026-03-03T18:48:23 IST" duration-ms="12282" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: first-name' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: first-name' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.CheckoutPage.enterDetails(CheckoutPage.java:36)
+at tests.E2ETest.completeOrderTest(E2ETest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#first\-name"}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5b9a0c6e5334658072b138e6a8cf378, findElement {using=id, value=first-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61106}, goog:processID: 6280, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61106/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5b9a0c6e5334658072b138e6a8cf378
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:23 IST" name="tearDown" finished-at="2026-03-03T18:48:24 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:24 IST" name="setup" finished-at="2026-03-03T18:48:25 IST" duration-ms="1768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="completeOrderTest(java.lang.String,java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:25 IST" name="completeOrderTest" data-provider="loginData" finished-at="2026-03-03T18:48:37 IST" duration-ms="11573" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: finish' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: finish' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.CheckoutPage.finishOrder(CheckoutPage.java:52)
+at tests.E2ETest.completeOrderTest(E2ETest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#finish"}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8344f6956e948433c60ed164d58d57a8, findElement {using=id, value=finish}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51384}, goog:processID: 22344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51384/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8344f6956e948433c60ed164d58d57a8
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:37 IST" name="tearDown" finished-at="2026-03-03T18:48:37 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:37 IST" name="setup" finished-at="2026-03-03T18:48:40 IST" duration-ms="2959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="completeOrderTest(java.lang.String,java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:40 IST" name="completeOrderTest" data-provider="loginData" finished-at="2026-03-03T18:48:51 IST" duration-ms="10933" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(),'Add to cart')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(),'Add to cart')]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.ProductPage.addProductToCart(ProductPage.java:26)
+at tests.E2ETest.completeOrderTest(E2ETest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Add to cart')]"}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76b7bff976131730e58bce88ab552387, findElement {using=xpath, value=//button[contains(text(),'Add to cart')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56232}, goog:processID: 14888, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56232/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76b7bff976131730e58bce88ab552387
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:51 IST" name="tearDown" finished-at="2026-03-03T18:48:51 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:51 IST" name="setup" finished-at="2026-03-03T18:48:53 IST" duration-ms="1250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="completeOrderTest(java.lang.String,java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:48:53 IST" name="completeOrderTest" data-provider="loginData" finished-at="2026-03-03T18:49:03 IST" duration-ms="10809" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(),'Add to cart')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(),'Add to cart')]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.ProductPage.addProductToCart(ProductPage.java:26)
+at tests.E2ETest.completeOrderTest(E2ETest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Add to cart')]"}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4119fef4018f7ee9d732f1d5971f66a, findElement {using=xpath, value=//button[contains(text(),'Add to cart')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64906}, goog:processID: 7436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64906/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4119fef4018f7ee9d732f1d5971f66a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:49:03 IST" name="tearDown" finished-at="2026-03-03T18:49:04 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:49:04 IST" name="setup" finished-at="2026-03-03T18:49:05 IST" duration-ms="1336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="completeOrderTest(java.lang.String,java.lang.String)[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:49:05 IST" name="completeOrderTest" data-provider="loginData" finished-at="2026-03-03T18:49:16 IST" duration-ms="10761" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(),'Add to cart')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(),'Add to cart')]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.ProductPage.addProductToCart(ProductPage.java:26)
+at tests.E2ETest.completeOrderTest(E2ETest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Add to cart')]"}
+  (Session info: chrome=145.0.7632.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd3a028decfd1647f6fcb0067a7a4089, findElement {using=xpath, value=//button[contains(text(),'Add to cart')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\sangr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59869}, goog:processID: 12440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59869/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd3a028decfd1647f6fcb0067a7a4089
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.E2ETest@51cd7ffc]" started-at="2026-03-03T18:49:16 IST" name="tearDown" finished-at="2026-03-03T18:49:16 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.E2ETest -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- E2E Suite -->
+</testng-results>

@@ -1,0 +1,231 @@
+2026-03-03 15:46:59 WARN  TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\src\main\resources\testng.xml] otherwise TestNG may fail or not work as expected.
+2026-03-03 15:47:00 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\src\main\resources\testng.xml
+
+2026-03-03 15:47:00 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:47:00 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:48:24 WARN  TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\src\main\resources\testng.xml] otherwise TestNG may fail or not work as expected.
+2026-03-03 15:48:25 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\src\main\resources\testng.xml
+
+2026-03-03 15:48:25 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:48:25 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:51:09 WARN  TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\src\main\resources\testng.xml] otherwise TestNG may fail or not work as expected.
+2026-03-03 15:51:12 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\src\main\resources\testng.xml
+
+2026-03-03 15:51:13 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:51:13 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:52:30 WARN  TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml] otherwise TestNG may fail or not work as expected.
+2026-03-03 15:52:30 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml
+
+2026-03-03 15:52:30 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:52:30 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:53:17 WARN  TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml] otherwise TestNG may fail or not work as expected.
+2026-03-03 15:53:18 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml
+
+2026-03-03 15:53:18 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:53:18 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:54:08 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml
+
+2026-03-03 15:54:08 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 15:55:35 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml
+
+2026-03-03 15:55:35 INFO  E2ETest - Fetching test data from Excel
+2026-03-03 16:11:33,321 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml
+
+2026-03-03 16:11:33,394 INFO  E2ETest - Fetching data from JSON
+2026-03-03 16:11:33,724 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:11:35,677 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:11:35,735 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:11:41,760 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 16:11:41,929 INFO  LoginPage - Entering username: standard_user
+2026-03-03 16:11:42,648 INFO  LoginPage - Entering password
+2026-03-03 16:11:43,380 INFO  LoginPage - Clicking login button
+2026-03-03 16:11:44,549 INFO  BaseTest - Closing browser
+2026-03-03 16:11:45,051 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:11:45,084 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:11:45,138 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:11:47,476 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 16:11:47,478 INFO  LoginPage - Entering username: standard_user
+2026-03-03 16:11:47,651 INFO  LoginPage - Entering password
+2026-03-03 16:11:47,814 INFO  LoginPage - Clicking login button
+2026-03-03 16:11:48,552 INFO  BaseTest - Closing browser
+2026-03-03 16:11:49,044 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:11:49,070 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:11:49,095 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:11:50,163 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 16:11:50,165 INFO  LoginPage - Entering username: standard_user
+2026-03-03 16:11:51,081 INFO  LoginPage - Entering password
+2026-03-03 16:11:51,300 INFO  LoginPage - Clicking login button
+2026-03-03 16:11:53,222 INFO  BaseTest - Closing browser
+2026-03-03 16:11:53,475 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:11:53,494 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:11:53,511 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:11:55,377 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 16:11:55,379 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 16:11:56,208 INFO  LoginPage - Entering password
+2026-03-03 16:11:56,413 INFO  LoginPage - Clicking login button
+2026-03-03 16:11:56,593 INFO  BaseTest - Closing browser
+2026-03-03 16:11:57,040 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:11:57,065 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:11:57,085 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:11:58,805 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 16:11:58,806 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 16:11:59,778 INFO  LoginPage - Entering password
+2026-03-03 16:11:59,896 INFO  LoginPage - Clicking login button
+2026-03-03 16:12:00,052 INFO  BaseTest - Closing browser
+2026-03-03 16:12:00,411 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:12:00,432 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:12:00,457 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:12:02,318 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 16:12:02,319 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 16:12:02,511 INFO  LoginPage - Entering password
+2026-03-03 16:12:02,757 INFO  LoginPage - Clicking login button
+2026-03-03 16:12:03,128 INFO  BaseTest - Closing browser
+2026-03-03 16:16:14,429 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml
+
+2026-03-03 16:16:14,517 INFO  E2ETest - Fetching data from JSON
+2026-03-03 16:16:14,853 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:16:15,664 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:16:15,758 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:16:21,619 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 16:16:21,920 INFO  LoginPage - Entering username: standard_user
+2026-03-03 16:16:22,535 INFO  LoginPage - Entering password
+2026-03-03 16:16:22,883 INFO  LoginPage - Clicking login button
+2026-03-03 16:16:25,677 INFO  E2ETest - Test Passed Successfully
+2026-03-03 16:16:25,693 INFO  BaseTest - Closing browser
+2026-03-03 16:16:26,202 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:16:26,228 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:16:26,267 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:16:28,870 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 16:16:28,871 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 16:16:29,307 INFO  LoginPage - Entering password
+2026-03-03 16:16:29,727 INFO  LoginPage - Clicking login button
+2026-03-03 16:16:40,680 INFO  BaseTest - Closing browser
+2026-03-03 16:16:41,098 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:16:41,130 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:16:41,158 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:16:43,310 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 16:16:43,311 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 16:16:43,761 INFO  LoginPage - Entering password
+2026-03-03 16:16:44,023 INFO  LoginPage - Clicking login button
+2026-03-03 16:16:54,719 INFO  BaseTest - Closing browser
+2026-03-03 16:16:55,258 INFO  BaseTest - Launching browser: chrome
+2026-03-03 16:16:55,286 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 16:16:55,321 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 16:16:57,530 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 16:16:57,531 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 16:16:57,873 INFO  LoginPage - Entering password
+2026-03-03 16:16:58,080 INFO  LoginPage - Clicking login button
+2026-03-03 16:17:08,958 INFO  BaseTest - Closing browser
+2026-03-03 18:44:19,076 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml
+
+2026-03-03 18:44:19,124 INFO  E2ETest - Fetching data from JSON
+2026-03-03 18:44:19,291 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:44:23,314 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:44:23,340 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:44:26,789 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 18:44:26,831 INFO  LoginPage - Entering username: standard_user
+2026-03-03 18:44:27,141 INFO  LoginPage - Entering password
+2026-03-03 18:44:27,293 INFO  LoginPage - Clicking login button
+2026-03-03 18:44:38,529 INFO  BaseTest - Closing browser
+2026-03-03 18:44:38,770 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:44:38,786 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:44:38,801 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:44:40,684 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 18:44:40,687 INFO  LoginPage - Entering username: standard_user
+2026-03-03 18:44:40,975 INFO  LoginPage - Entering password
+2026-03-03 18:44:41,121 INFO  LoginPage - Clicking login button
+2026-03-03 18:44:52,285 INFO  BaseTest - Closing browser
+2026-03-03 18:44:52,529 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:44:52,545 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:44:52,560 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:44:53,949 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 18:44:53,950 INFO  LoginPage - Entering username: standard_user
+2026-03-03 18:44:54,079 INFO  LoginPage - Entering password
+2026-03-03 18:44:54,182 INFO  LoginPage - Clicking login button
+2026-03-03 18:45:05,417 INFO  BaseTest - Closing browser
+2026-03-03 18:45:05,634 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:45:05,646 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:45:05,663 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:45:07,177 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 18:45:07,177 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 18:45:07,309 INFO  LoginPage - Entering password
+2026-03-03 18:45:07,392 INFO  LoginPage - Clicking login button
+2026-03-03 18:45:17,896 INFO  BaseTest - Closing browser
+2026-03-03 18:45:18,118 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:45:18,133 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:45:18,145 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:45:20,585 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 18:45:20,586 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 18:45:20,690 INFO  LoginPage - Entering password
+2026-03-03 18:45:20,777 INFO  LoginPage - Clicking login button
+2026-03-03 18:45:31,285 INFO  BaseTest - Closing browser
+2026-03-03 18:45:31,496 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:45:31,510 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:45:31,522 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:45:33,090 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 18:45:33,092 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 18:45:33,271 INFO  LoginPage - Entering password
+2026-03-03 18:45:33,444 INFO  LoginPage - Clicking login button
+2026-03-03 18:45:44,086 INFO  BaseTest - Closing browser
+2026-03-03 18:47:51,230 INFO  Utils - [TestNG] Running:
+  C:\Users\sangr\eclipse-workspace\EcommerceAutomationFramework\testng.xml
+
+2026-03-03 18:47:51,271 INFO  E2ETest - Fetching data from JSON
+2026-03-03 18:47:51,421 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:47:51,807 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:47:51,849 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:47:55,232 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 18:47:55,347 INFO  LoginPage - Entering username: standard_user
+2026-03-03 18:47:56,302 INFO  LoginPage - Entering password
+2026-03-03 18:47:56,449 INFO  LoginPage - Clicking login button
+2026-03-03 18:48:09,483 INFO  BaseTest - Closing browser
+2026-03-03 18:48:09,836 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:48:09,856 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:48:09,875 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:48:11,533 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 18:48:11,542 INFO  LoginPage - Entering username: standard_user
+2026-03-03 18:48:12,393 INFO  LoginPage - Entering password
+2026-03-03 18:48:12,579 INFO  LoginPage - Clicking login button
+2026-03-03 18:48:23,814 INFO  BaseTest - Closing browser
+2026-03-03 18:48:24,030 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:48:24,050 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:48:24,070 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:48:25,799 INFO  E2ETest - Starting Test for user: standard_user
+2026-03-03 18:48:25,800 INFO  LoginPage - Entering username: standard_user
+2026-03-03 18:48:25,911 INFO  LoginPage - Entering password
+2026-03-03 18:48:25,987 INFO  LoginPage - Clicking login button
+2026-03-03 18:48:37,480 INFO  BaseTest - Closing browser
+2026-03-03 18:48:37,692 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:48:37,708 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:48:37,725 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:48:40,652 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 18:48:40,653 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 18:48:40,832 INFO  LoginPage - Entering password
+2026-03-03 18:48:40,974 INFO  LoginPage - Clicking login button
+2026-03-03 18:48:51,586 INFO  BaseTest - Closing browser
+2026-03-03 18:48:51,836 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:48:51,848 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:48:51,858 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:48:53,087 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 18:48:53,087 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 18:48:53,221 INFO  LoginPage - Entering password
+2026-03-03 18:48:53,309 INFO  LoginPage - Clicking login button
+2026-03-03 18:49:03,897 INFO  BaseTest - Closing browser
+2026-03-03 18:49:04,103 INFO  BaseTest - Launching browser: chrome
+2026-03-03 18:49:04,113 INFO  WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-03 18:49:04,126 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sangr\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-03 18:49:05,440 INFO  E2ETest - Starting Test for user: locked_out_user
+2026-03-03 18:49:05,441 INFO  LoginPage - Entering username: locked_out_user
+2026-03-03 18:49:05,552 INFO  LoginPage - Entering password
+2026-03-03 18:49:05,630 INFO  LoginPage - Clicking login button
+2026-03-03 18:49:16,289 INFO  BaseTest - Closing browser
