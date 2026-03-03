@@ -1,47 +1,78 @@
 package tests;
 
 import base.BaseTest;
-import org.testng.annotations.*;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import pages.CartPage;
+import pages.CheckoutPage;
 import pages.LoginPage;
-import pages.ConfirmationPage;
-import utils.*;
-import org.apache.logging.log4j.*;
+import pages.ProductPage;
+import utils.JsonDataReader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.IOException;
 
 public class E2ETest extends BaseTest {
 
-    private static final Logger logger =
-            LogManager.getLogger(E2ETest.class);
+    private static final Logger logger = LogManager.getLogger(E2ETest.class);
 
-    @DataProvider(name="loginData")
-    public Object[][] getLoginData(){
+    // =========================
+    // JSON DATA PROVIDER
+    // =========================
+    @DataProvider(name = "jsonData")
+    public Object[][] getData() throws IOException {
         logger.info("Fetching data from JSON");
-        return JsonUtils.getJsonData();
+        return JsonDataReader.getJsonData();
     }
 
-    @Test(dataProvider="loginData",
-          retryAnalyzer = utils.RetryAnalyzer.class)
-    public void completeOrderTest(String username,
-                                  String password){
+    // =========================
+    // E2E TEST
+    // =========================
+    @Test(dataProvider = "jsonData", retryAnalyzer = utils.RetryAnalyzer.class)
+    public void completeOrderTest(String username, String password) {
 
         logger.info("Starting Test for user: " + username);
 
-        LoginPage login = new LoginPage(driver);
+        // ---------- LOGIN ----------
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login(username, password);
 
-        ConfirmationPage confirmation =
-                login.enterUsername(username)
-                        .enterPassword(password)
-                        .clickLogin()
-                        .addProductToCart()
-                        .goToCart()
-                        .clickCheckout()
-                        .enterDetails()
-                        .finishOrder();
+        // ---------- NEGATIVE SCENARIO ----------
+        if (username.equalsIgnoreCase("locked_out_user")) {
 
-        Assert.assertEquals(
-                confirmation.getConfirmationMessage(),
-                "Thank you for your order!");
+            logger.info("Validating locked user error message");
+            Assert.assertTrue(loginPage.isErrorDisplayed(),
+                    "Error message not displayed for locked user");
 
-        logger.info("Test Passed Successfully");
+            logger.info("Locked user validation completed");
+            return; // stop test here
+        }
+
+        // ---------- PRODUCT PAGE ----------
+        ProductPage productPage = new ProductPage(driver);
+        productPage.addProductToCart();
+
+        logger.info("Product added to cart");
+
+        // ---------- CART ----------
+        CartPage cartPage = new CartPage(driver);
+        cartPage.goToCheckout();
+
+        logger.info("Navigated to Checkout");
+
+        // ---------- CHECKOUT ----------
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.fillInformation("Sangram", "Shinde", "400001");
+        checkoutPage.finishOrder();
+
+        logger.info("Order finished");
+
+        // ---------- ASSERT ----------
+        Assert.assertTrue(checkoutPage.isOrderComplete(),
+                "Order completion message not displayed");
+
+        logger.info("Order successfully completed for user: " + username);
     }
 }
