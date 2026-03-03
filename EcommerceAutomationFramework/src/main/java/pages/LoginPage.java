@@ -23,6 +23,10 @@ public class LoginPage {
     @FindBy(id="login-button")
     WebElement loginBtn;
 
+    // ✅ ADD THIS
+    @FindBy(css = "h3[data-test='error']")
+    WebElement errorMessage;
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -32,14 +36,16 @@ public class LoginPage {
     public LoginPage enterUsername(String user) {
         logger.info("Entering username: " + user);
         wait.until(ExpectedConditions.visibilityOf(username))
-                .sendKeys(user);
+                .clear();
+        username.sendKeys(user);
         return this;
     }
 
     public LoginPage enterPassword(String pass) {
         logger.info("Entering password");
         wait.until(ExpectedConditions.visibilityOf(password))
-                .sendKeys(pass);
+                .clear();
+        password.sendKeys(pass);
         return this;
     }
 
@@ -48,5 +54,15 @@ public class LoginPage {
         wait.until(ExpectedConditions.elementToBeClickable(loginBtn))
                 .click();
         return new ProductPage(driver);
+    }
+
+    // ✅ ADD THIS METHOD
+    public boolean isErrorVisible() {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(errorMessage));
+            return errorMessage.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
